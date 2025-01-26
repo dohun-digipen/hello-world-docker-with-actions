@@ -36,6 +36,6 @@ jobs:
         password: ${{ secrets.ACR_PASSWORD }}
 
     - name: Push Docker image
-      run: docker push dlee930cs397registry.azurecr.io/helloworldwebserver:${{ github.sha }}
+      run: docker push dlee930cs397registry.azurecr.io/helloworldwebserver:latest
 
     
