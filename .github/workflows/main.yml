@@ -26,7 +26,7 @@ jobs:
       run: dotnet publish -c Release
 
     - name: Build Docker image
-      run: docker build -t dlee930cs397registry.azurecr.io/helloworldwebserver:${{ github.sha }} .
+      run: docker build -t dlee930cs397registry.azurecr.io/helloworldwebserver:latest .
 
     - name: Login to Azure Container Registry
       uses: azure/docker-login@v1
